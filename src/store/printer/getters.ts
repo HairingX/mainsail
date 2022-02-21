@@ -281,12 +281,16 @@ export const getters: GetterTree<PrinterState, RootState> = {
                         object: value,
                         config: settings,
                         off_below: undefined,
+                        min_power: undefined,
                         max_power: undefined
                     }
 
                     if ('settings' in state.configfile && key.toLowerCase() in state.configfile.settings) {
                         if ('off_below' in settings)
                             tmp.off_below = settings?.off_below ?? 0
+
+                        if ('min_power' in settings)
+                            tmp.min_power = settings?.min_power ?? 0
 
                         if ('max_power' in settings)
                             tmp.max_power = settings?.max_power ?? 1
