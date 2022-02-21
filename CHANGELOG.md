@@ -2,94 +2,10 @@
 # Changelog
 All notable changes to Mainsail will be documented in this file.
 
-## [unreleased]
+## [2.1.2](https://github.com/mainsail-crew/mainsail/releases/tag/v2.1.2) - 2022-02-21
 ### Bug Fixes
 
 - **env**: Parse environment variable as string (#632) | [d3172fa](d3172fa3537c6c2087bcfcc319dd164420b0e6e1)
-- Video and download link in timelapse video dialog (#611) | [5f0c4ba](5f0c4baacad69ef0a0f43a7b6a04839bded24fb0)
-- Console error regarding touch directive (#633) | [fc86125](fc86125ebd9cc32622ea324905a3fb906013efba)
-- Import bugfixes from release v2.1.2 (#639) | [7890d1e](7890d1e004f99b70ea9d2aa52152876fe6aad6f3)
-
-### Documentation
-
-- Split up quicktips (#584) | [4f9581f](4f9581f3a0481430e32b080a92a4512c4b74c8ec)
-- Cleanup assets folder (#601) | [c6432d5](c6432d5b3c5667ee8c12ca4ea595682f64fe4b0e)
-- Update credits (#602) | [02d5f6b](02d5f6b8c31c09fef08ffb109468cecb55e8208e)
-
-### Features
-
-- **pwa**: Add PWA support for https based instances (#654) | [db9b19e](db9b19ef0fabbb49ac7118c1353b0d74773b20f2)
-- Add custom number input component (#638) | [fa20b19](fa20b19a5b0f58b8b826482e1384361f16379a44)
-- Multiselect in history jobs (#509) | [455a3aa](455a3aa19489cfbcbdf740077e3274153d6448c4)
-- Display only existing/useable bed_mesh profiles (#660) | [82f756c](82f756c6ae6243591d84ec3c1f85973ed7133b05)
-- Add localization options to NumberInput.vue (#661) | [a0d4c66](a0d4c66d6c8b7ce09afca5db0a819e74cfec8904)
-- Add profile name field to calibrate bed_mesh dialog (#664) | [f974372](f974372cbebde56733947b20d155b6d93413ed63)
-- Rework heightmap page (#667) | [96b212e](96b212e8dc86f58fef6edd02ff10fe7fe36da573)
-
-### Localization
-
-- **da**: Update da.json (#596) | [a15cb3c](a15cb3cbeb02d9122b0fd50331c1559faddb4ba3)
-- **pl**: Bugfix 29/01/2022 (#598) | [e9157f1](e9157f14c6b1b467ecee770ae4f8e2f9bcbcfc4f)
-- **pl**: Update 03.02.2022 (#606) | [30abb68](30abb687a349123ab14156b2a102752be4aa17f9)
-
-### Performance
-
-- Load codemirror into a chunk for faster LCP (#641) | [6563b7c](6563b7ce4782b8c8cfd287d223634bfba46aefbf)
-- Replace echart library and load it modular (#645) | [fe92b97](fe92b97940a4508705aebf179ffb4e2453150558)
-
-### Refactor
-
-- Migrate `longpress.js` to `longpress.ts` (#619) | [c589a49](c589a495a6ef55bfbb1a498a052ac9d2f56a2acf)
-- Replace 'vue-headful' with 'vue-meta' (#620) | [0cf8ba0](0cf8ba05be1a3e43201b94914ab150efe4562a8c)
-- Make sure that port '80' and '443' are correctly passed through (#631) | [fd22cc2](fd22cc297d0df7c3a5c82fc5a510b1cb682f88fd)
-- Move rename button in heightmap (#665) | [d30ad58](d30ad5858ad89d0de0e3a2640ad7dbacb76fe9a4)
-
-### Styling
-
-- Add prettier as default formatter (#614) | [04b6992](04b6992f3c202634948ee7c6afa9cd2c517f7af9)
-- Use prettier on other file formats as well (#648) | [615ee73](615ee73801588fdda28494e490a7525719a3d835)
-- Improve prettier integration (#662) | [72e0ca8](72e0ca8e837697b8947a7358dbc5eaa58477df5b)
-
-### Testing
-
-- Add cypress for e2e testing (#655) | [cc1615a](cc1615acd4b841887b8220e2647a69cdb559c6b2)
-
-## [2.1.2](https://github.com/mainsail-crew/mainsail/releases/tag/v2.1.2) - 2022-02-14
-### Release
-
-- Release v2.1.2 (#639) | [ebf7486](ebf74860f4d3119802590c6f6cffeb82e7af5a45)
-
-## [2.1.1](https://github.com/mainsail-crew/mainsail/releases/tag/v2.1.1) - 2022-01-28
-### Bug Fixes
-
-- Read nozzle_diameter from klipper config in gcodeviewer (#558) | [8eb67ae](8eb67ae2b66c3960770ae45236f5107cbbefad4e)
-- Default color mode in gcodeviewer was wrong (#559) | [1e54c92](1e54c92b000e33e41dfc5bf6f4a7f1df33d43063)
-- Farm printer switch and display klippy connection errors (#563) | [1de95b1](1de95b12ecdc6eab0f45fea5141542a75c38c0a6)
-- Delete remote printers dont work (#564) | [7fc5e29](7fc5e298ad63a36af2396c73b4f1bebfc999e4d4)
-- Input field and spinner bug (fixes #551) (#555) | [75aad8b](75aad8b88015e92c3f9dc443a177240dcd15b4c3)
-- Hide second notification in timelapse > remove mp4 (#572) | [0db74e9](0db74e9e378c6ab58abb407cbfda24c671581342)
-- Polling klippy error messages (#571) | [d856b73](d856b73cd116e75b0c026bd2315c9720560dd22e)
-
-### Documentation
-
-- Additions to the readme/index for 2.1 (#543) | [b476419](b4764194b0e73e21b35cd254b52d2a4fb140ab33)
-- Review Themes  Chapter in Documentation (#486) | [702981e](702981e32423bf84de22f8337d9bdf6a6dc45bdd)
-- Fix macro link | [a3ad590](a3ad590d4b40dae279b64c553a06d2984cb8c2b1)
-- Update prepare themes page with review feedback (#554) | [69bb61a](69bb61a30d4aca175e2e634826f5f8a455e7ff94)
-- Fix some broken links (#580) | [ed45815](ed45815d3bb185a8829bfb333a8160fb74a7b2d8)
-
-### Localization
-
-- **da**: Danish - minor updates, missing tags and removed "deceleration" (#578) | [0f0180b](0f0180bc50063ff80e41eddf02f64827ddd9e0a8)
-- **it**: IT translation update (#553) | [d569483](d5694835d0ea6954d1f64fe071455cc2400b84ef)
-- **pl**: Polish translation (#581) | [b944af5](b944af54486ee36ac58e4469d0b64ebc3e957739)
-- **pl**: Fix polish translation (#589) | [a121e56](a121e560859c862f36538c19930fb632519182aa)
-- **pl**: Additional fix for polish language (#592) | [1c4127a](1c4127acf2f9b9774511d55d3b12d413c71eef1c)
-- **zh**: Update zh.json (#557) | [b743467](b743467bca643e66642bdbec69d6c8942d624d08)
-
-## [2.1.0](https://github.com/mainsail-crew/mainsail/releases/tag/v2.1.0) - 2022-01-19
-### Bug Fixes
-
 - **websocket**: Close websocket before connecting (#383) | [182d7f1](182d7f146ed55ede1b9874cf7f3ad2fe05b17266)
 - Inconsistent spelling and typos (#379) | [62ccb1f](62ccb1f97de073bdae9b3fdf25870d28c37b855e)
 - Remove [display_status] from min settings, when [display] exists | [b99463e](b99463ee99c6ab4dc777b5481b81e47b5df6ffc7)
@@ -235,6 +151,16 @@ All notable changes to Mainsail will be documented in this file.
 - EncodeURI for thumbnails and timelapse files (#539) | [7b19c90](7b19c902dee500b58e9a07e074c8c34efa7953e3)
 - Ipv6 issues with encodeURI | [56d61ce](56d61ce6ae9af82e4e97d86f9e418b214a6b2fc5)
 - Improve machine settings number inputs (#537) | [595c937](595c937d502defbdec9cdd1b7b827a608e6d131c)
+- Read nozzle_diameter from klipper config in gcodeviewer (#558) | [8eb67ae](8eb67ae2b66c3960770ae45236f5107cbbefad4e)
+- Default color mode in gcodeviewer was wrong (#559) | [1e54c92](1e54c92b000e33e41dfc5bf6f4a7f1df33d43063)
+- Farm printer switch and display klippy connection errors (#563) | [1de95b1](1de95b12ecdc6eab0f45fea5141542a75c38c0a6)
+- Delete remote printers dont work (#564) | [7fc5e29](7fc5e298ad63a36af2396c73b4f1bebfc999e4d4)
+- Input field and spinner bug (fixes #551) (#555) | [75aad8b](75aad8b88015e92c3f9dc443a177240dcd15b4c3)
+- Hide second notification in timelapse > remove mp4 (#572) | [0db74e9](0db74e9e378c6ab58abb407cbfda24c671581342)
+- Polling klippy error messages (#571) | [d856b73](d856b73cd116e75b0c026bd2315c9720560dd22e)
+- Video and download link in timelapse video dialog (#611) | [5f0c4ba](5f0c4baacad69ef0a0f43a7b6a04839bded24fb0)
+- Console error regarding touch directive (#633) | [fc86125](fc86125ebd9cc32622ea324905a3fb906013efba)
+- Import bugfixes from release v2.1.2 (#639) | [7890d1e](7890d1e004f99b70ea9d2aa52152876fe6aad6f3)
 
 ### Documentation
 
@@ -269,11 +195,20 @@ All notable changes to Mainsail will be documented in this file.
 - Add redirect dor configuration | [f535ccf](f535ccf49375eaf36af2de7961778aebf77682eb)
 - Update Quicktips (#518) | [be2efac](be2efac9fdfb218f0577ed003d9bb8255d516cb1)
 - Update screenshot to v2.1.0 | [9c70a0c](9c70a0cafac1c446541c6a324f589eceaa1d0e72)
+- Additions to the readme/index for 2.1 (#543) | [b476419](b4764194b0e73e21b35cd254b52d2a4fb140ab33)
+- Review Themes  Chapter in Documentation (#486) | [702981e](702981e32423bf84de22f8337d9bdf6a6dc45bdd)
+- Fix macro link | [a3ad590](a3ad590d4b40dae279b64c553a06d2984cb8c2b1)
+- Update prepare themes page with review feedback (#554) | [69bb61a](69bb61a30d4aca175e2e634826f5f8a455e7ff94)
+- Fix some broken links (#580) | [ed45815](ed45815d3bb185a8829bfb333a8160fb74a7b2d8)
+- Split up quicktips (#584) | [4f9581f](4f9581f3a0481430e32b080a92a4512c4b74c8ec)
+- Cleanup assets folder (#601) | [c6432d5](c6432d5b3c5667ee8c12ca4ea595682f64fe4b0e)
+- Update credits (#602) | [02d5f6b](02d5f6b8c31c09fef08ffb109468cecb55e8208e)
 
 ### Features
 
 - **editor**: Add webcam.conf as webcamd config | [5efbd50](5efbd5002470a857c0a9ca6a41764f0b5a8f8656)
 - **panel**: Disable text select for panel headline | [f8842ff](f8842ff0705017a79789aacd39daf66bce080e69)
+- **pwa**: Add PWA support for https based instances (#654) | [db9b19e](db9b19ef0fabbb49ac7118c1353b0d74773b20f2)
 - Add backup and restore gcode viewer state | [542e094](542e09434856a670aadd818383b579b69ca926a7)
 - Add snackbar for display the rendering process and cancel it | [bb15bbe](bb15bbec083b4d7b03121b301f0a53cbae90d212)
 - Add snackbar for display the downloading gcode file and option to cancel it | [2c38aad](2c38aad7fde746fe81559bf6abba660a200f9d9c)
@@ -339,6 +274,12 @@ All notable changes to Mainsail will be documented in this file.
 - Add displaying/sorting of/by more gcode metadata (#519) | [55df4da](55df4da10405fe191dea016424678c922bc12985)
 - Ignore timelapse pause state during a print | [d6b9863](d6b98639c1c5484cb6ef26d04fc6c4cb264ade3b)
 - Send gcode macro with keyup enter (#544) | [1a8a955](1a8a9558d39505462fc0ac2864c9bc88c6d5b852)
+- Add custom number input component (#638) | [fa20b19](fa20b19a5b0f58b8b826482e1384361f16379a44)
+- Multiselect in history jobs (#509) | [455a3aa](455a3aa19489cfbcbdf740077e3274153d6448c4)
+- Display only existing/useable bed_mesh profiles (#660) | [82f756c](82f756c6ae6243591d84ec3c1f85973ed7133b05)
+- Add localization options to NumberInput.vue (#661) | [a0d4c66](a0d4c66d6c8b7ce09afca5db0a819e74cfec8904)
+- Add profile name field to calibrate bed_mesh dialog (#664) | [f974372](f974372cbebde56733947b20d155b6d93413ed63)
+- Rework heightmap page (#667) | [96b212e](96b212e8dc86f58fef6edd02ff10fe7fe36da573)
 
 ### Localization
 
@@ -348,6 +289,8 @@ All notable changes to Mainsail will be documented in this file.
 - **da**: Minor changes and spellchecking (#512) | [c831d33](c831d338732e666558ace810985641d7b0c8ce29)
 - **da**: Fix typo in locale file | [65cb342](65cb342cb8d198834530e237860498e8d4e3c49c)
 - **da**: Updated Danish translations (#527) | [649bbaa](649bbaa7dc6ad7804dd19db5351e979c7a50ef94)
+- **da**: Danish - minor updates, missing tags and removed "deceleration" (#578) | [0f0180b](0f0180bc50063ff80e41eddf02f64827ddd9e0a8)
+- **da**: Update da.json (#596) | [a15cb3c](a15cb3cbeb02d9122b0fd50331c1559faddb4ba3)
 - **de**: Update de translation (#446) | [d92543e](d92543e1c385c1434ac7dea21bfed87a156e042d)
 - **de**: Remove all unused keys | [7b66065](7b66065e777f6ec25adccd25f5280b891d1dff6c)
 - **de**: Fix missing entry | [83e10bd](83e10bde0cf705d03db51ddfa7980e01131f4dfa)
@@ -376,10 +319,16 @@ All notable changes to Mainsail will be documented in this file.
 - **it**: Update translation file (#455) | [7005b87](7005b87870657e355b3684dccfa942b40ccdc5b6)
 - **it**: Remove unused keys | [ffa05ee](ffa05ee1d56f9879576c709d11b5217662597c97)
 - **it**: Update IT to beta6 (#483) | [e5b0ad2](e5b0ad292b7c02a72dcf91d25360390bd1064433)
+- **it**: IT translation update (#553) | [d569483](d5694835d0ea6954d1f64fe071455cc2400b84ef)
 - **nl**: NL translations for 2.1-beta (#453) | [04ead52](04ead521b0ed3618ce22c1eaa4b546f93b504ea7)
 - **nl**: Remove unused keys | [a3a1288](a3a12882f89f41373e15e60179b7d91b9f08bd25)
 - **nl**: Add last 2.1-beta strings (#499) | [da72a4e](da72a4e2720c1568d33f7f820fce4d65c11a68f6)
 - **nl**: Update NL locale (#529) | [d94e9f1](d94e9f18f34e8e5106e2ca5aced09bd236c876e0)
+- **pl**: Polish translation (#581) | [b944af5](b944af54486ee36ac58e4469d0b64ebc3e957739)
+- **pl**: Fix polish translation (#589) | [a121e56](a121e560859c862f36538c19930fb632519182aa)
+- **pl**: Additional fix for polish language (#592) | [1c4127a](1c4127acf2f9b9774511d55d3b12d413c71eef1c)
+- **pl**: Bugfix 29/01/2022 (#598) | [e9157f1](e9157f14c6b1b467ecee770ae4f8e2f9bcbcfc4f)
+- **pl**: Update 03.02.2022 (#606) | [30abb68](30abb687a349123ab14156b2a102752be4aa17f9)
 - **ru**: Update translation file (#458) | [f172420](f1724206f60f6dd86a18f82d563cfcb599f2d19a)
 - **ru**: Fix ru language file for the word "Flow" | [6c4bbdb](6c4bbdb5f9c97331d7b13048c21684f1c0e683f9)
 - **ru**: Remove unused keys | [d1905f1](d1905f100aaded98fa1e637327806a909442b0e0)
@@ -388,6 +337,7 @@ All notable changes to Mainsail will be documented in this file.
 - **zh**: Fix syntax error in zh.json | [881ebbd](881ebbd49aa762a28eeec9e9ecc327c391ede4ee)
 - **zh**: Remove all unused keys | [69eb419](69eb41923d5c08906401b1c1d48b1eab1a8bf35f)
 - **zh**: Remove unused keys | [a54813a](a54813a1671b1c5dc6c1d4a21dcb94c6398717e6)
+- **zh**: Update zh.json (#557) | [b743467](b743467bca643e66642bdbec69d6c8942d624d08)
 - **zh-tw**: Add chinese traditional (#418) | [79b42aa](79b42aa588de3fce7d69815af426cbec680ad36c)
 - **zh-tw**: Remove all unused keys | [61bb2dc](61bb2dcac1d422ab8c32e6cb1acc0b8c70acf64b)
 - **zh-tw**: Remove unused keys | [95a13c9](95a13c9c44abc4cac1b6d703d5eba4669d2834d3)
@@ -396,6 +346,11 @@ All notable changes to Mainsail will be documented in this file.
 - Fix missing entry | [88ecdcc](88ecdcc3c6a06cdf1bb4beac2fe12cd8e13c24ce)
 - Add "Temp too high", "Temp too low" output to i18n in ToolsPanel | [94f6051](94f60516c1a76f844c4d08cc395a9b1653c05ed6)
 - Fix keys in top corner menu | [3ab0a59](3ab0a5952ac5b59781420ab98bd2ce8d1e03ee86)
+
+### Performance
+
+- Load codemirror into a chunk for faster LCP (#641) | [6563b7c](6563b7ce4782b8c8cfd287d223634bfba46aefbf)
+- Replace echart library and load it modular (#645) | [fe92b97](fe92b97940a4508705aebf179ffb4e2453150558)
 
 ### Refactor
 
@@ -455,6 +410,20 @@ All notable changes to Mainsail will be documented in this file.
 - Sort buttons in status panel toolbar | [9702086](97020863d29e2f0c027373ca84fe6b2ab28f98d1)
 - Change panel expansion indicator (#516) | [8acf2b3](8acf2b3b7e416b3de5f00961ef699752fbe4eba0)
 - Change default colors (#523) | [4ac9b56](4ac9b567755be1045c8150b137499ea5016861e8)
+- Migrate `longpress.js` to `longpress.ts` (#619) | [c589a49](c589a495a6ef55bfbb1a498a052ac9d2f56a2acf)
+- Replace 'vue-headful' with 'vue-meta' (#620) | [0cf8ba0](0cf8ba05be1a3e43201b94914ab150efe4562a8c)
+- Make sure that port '80' and '443' are correctly passed through (#631) | [fd22cc2](fd22cc297d0df7c3a5c82fc5a510b1cb682f88fd)
+- Move rename button in heightmap (#665) | [d30ad58](d30ad5858ad89d0de0e3a2640ad7dbacb76fe9a4)
+
+### Styling
+
+- Add prettier as default formatter (#614) | [04b6992](04b6992f3c202634948ee7c6afa9cd2c517f7af9)
+- Use prettier on other file formats as well (#648) | [615ee73](615ee73801588fdda28494e490a7525719a3d835)
+- Improve prettier integration (#662) | [72e0ca8](72e0ca8e837697b8947a7358dbc5eaa58477df5b)
+
+### Testing
+
+- Add cypress for e2e testing (#655) | [cc1615a](cc1615acd4b841887b8220e2647a69cdb559c6b2)
 
 ## [2.0.1](https://github.com/mainsail-crew/mainsail/releases/tag/v2.0.1) - 2021-09-08
 ### Documentation
